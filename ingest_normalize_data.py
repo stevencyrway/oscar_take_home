@@ -47,8 +47,9 @@ port = '25060'
 DATABASE_URL = f"postgresql+psycopg2://{user}:{password}@{host}:{port}/{dbname}"
 engine = create_engine(DATABASE_URL)
 
-claimsjoincodes.to_sql('claims', engine, if_exists='replace', index=False)
-prescriptions.to_sql('prescriptions', engine, if_exists='replace', index=False)
-memberprofile.to_sql('member_profile', engine, if_exists='replace', index=False)
+# write the tables to the postgres instance
+claimsjoincodes.to_sql('claims', engine, if_exists='replace', index=False, chunksize=5000)
+prescriptions.to_sql('prescriptions', engine, if_exists='replace', index=False, chunksize=5000)
+memberprofile.to_sql('member_profile', engine, if_exists='replace', index=False, chunksize=5000)
 
 engine.dispose()
