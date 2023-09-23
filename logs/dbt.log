@@ -1,0 +1,25 @@
+
+
+============================== 2023-09-23 03:33:30.127767 | 51488301-918d-497e-ad90-64119253cbd1 ==============================
+03:33:30.127771 [info ] [MainThread]: Running with dbt=1.1.0
+03:33:30.127955 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/stevencyrway/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+03:33:30.128018 [debug] [MainThread]: Tracking: tracking
+03:33:30.135680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110020580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11003e970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11003ee20>]}
+03:33:39.230096 [debug] [MainThread]: Starter project path: /opt/homebrew/Cellar/dbt-postgres/1.1.0/libexec/lib/python3.9/site-packages/dbt/include/starter_project
+03:33:42.424743 [info ] [MainThread]: 
+Your new dbt project "oscar_health_analytics" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+03:33:42.424998 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11007e250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100bff70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110377190>]}

@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: fct_prescriptions
+    columns:
+      - name: fct_prescriptions_pk
+        tests:
+          - unique
+  - name: fct_claims
+    columns:
+      - name: fct_claims_pk
+        tests:
+          - unique
+  - name: dim_member
+    columns:
+      - name: member_id
+        tests:
+          - unique
+  - name: agg_diagnoses
+    columns:
+      - name: agg_diagnoses_pk
+        tests:
+          - unique
